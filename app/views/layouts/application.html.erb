@@ -1,12 +1,88 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>BlueCards</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body class='<%= controller.controller_name %>'>
-<%= yield %>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="printer.png" />
+
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "vendor/modernizr" %>
+    <%= javascript_include_tag "application" 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+
+<nav class="top-bar" data-topbar>
+ <ul class="title-area">
+
+   <li class="name">
+     <h1>
+       <a href="#">
+         PrintBlueCards.com
+       </a>
+     </h1>
+   </li>
+   <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
+ </ul>
+
+ <section class="top-bar-section">
+
+   <ul class="right">
+     <li class="divider"></li>
+     <li class="has-dropdown">
+       <a href="#">Main Item 1</a>
+       <ul class="dropdown">
+         <li><label>Section Name</label></li>
+         <li class="has-dropdown">
+           <a href="#" class="">Has Dropdown, Level 1</a>
+           <ul class="dropdown">
+             <li><a href="#">Dropdown Options</a></li>
+             <li><a href="#">Dropdown Options</a></li>
+             <li><a href="#">Level 2</a></li>
+             <li><a href="#">Subdropdown Option</a></li>
+             <li><a href="#">Subdropdown Option</a></li>
+             <li><a href="#">Subdropdown Option</a></li>
+           </ul>
+         </li>
+         <li><a href="#">Dropdown Option</a></li>
+         <li><a href="#">Dropdown Option</a></li>
+         <li class="divider"></li>
+         <li><label>Section Name</label></li>
+         <li><a href="#">Dropdown Option</a></li>
+         <li><a href="#">Dropdown Option</a></li>
+         <li><a href="#">Dropdown Option</a></li>
+         <li class="divider"></li>
+         <li><a href="#">See all →</a></li>
+       </ul>
+     </li>
+     <li class="divider"></li>
+     <li><a href="#">Main Item 2</a></li>
+     <li class="divider"></li>
+     <li class="has-dropdown">
+       <a href="#">Main Item 3</a>
+       <ul class="dropdown">
+         <li><a href="#">Dropdown Option</a></li>
+         <li><a href="#">Dropdown Option</a></li>
+         <li><a href="#">Dropdown Option</a></li>
+         <li class="divider"></li>
+         <li><a href="#">See all →</a></li>
+       </ul>
+     </li>
+   </ul>
+ </section>
+</nav>
+
+
+<script>
+document.write('<script src=js/vendor/' +
+('__proto__' in {} ? 'zepto' : 'jquery') +
+'.js><\/script>')
+</script>
+<script src="js/foundation.min.js"></script>
+<script>
+ $(document).foundation();
+</script>
+
+    <%= yield %>
+
+  </body>
 </html>
