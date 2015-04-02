@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'scoutentry/index'
+
   root 'application#index'
 
   devise_for :users

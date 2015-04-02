@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'wice_grid', '3.4.1'
 gem 'devise'
 gem 'foundation-rails', '~>5.5'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
