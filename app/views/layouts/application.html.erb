@@ -17,9 +17,9 @@
 
    <li class="name">
      <h1>
-       <a href="#">
-         PrintBlueCards.com
-       </a>
+
+       <%= link_to 'PrintBlueCards.com', root_url %>
+
      </h1>
    </li>
    <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
@@ -30,22 +30,11 @@
    <ul class="right">
      <li class="divider"></li>
      <li class="has-dropdown">
-       <a href="#">Main Item 1</a>
+       <a href="#">Your Profile</a>
        <ul class="dropdown">
-         <li><label>Section Name</label></li>
-         <li class="has-dropdown">
-           <a href="#" class="">Has Dropdown, Level 1</a>
-           <ul class="dropdown">
-             <li><a href="#">Dropdown Options</a></li>
-             <li><a href="#">Dropdown Options</a></li>
-             <li><a href="#">Level 2</a></li>
-             <li><a href="#">Subdropdown Option</a></li>
-             <li><a href="#">Subdropdown Option</a></li>
-             <li><a href="#">Subdropdown Option</a></li>
-           </ul>
-         </li>
-         <li><a href="#">Dropdown Option</a></li>
-         <li><a href="#">Dropdown Option</a></li>
+         <li><label>Entry</label></li>
+           <li><a href="#" class=""><%= link_to 'Existing Scouts', root_url %></a></li>
+         <li><a href="#">New Scouts</a></li>
          <li class="divider"></li>
          <li><label>Section Name</label></li>
          <li><a href="#">Dropdown Option</a></li>
