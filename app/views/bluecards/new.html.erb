@@ -1,0 +1,45 @@
+<p>
+  <h1>New Blue Card</h1>
+
+  <%= form_for :bluecard do |f| %>
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.label :address %><br>
+    <%= f.text_area :address %>
+  </p>
+
+  <p>
+    <%= f.label :city %><br>
+    <%= f.text_area :city %>
+  </p>
+
+  <p>
+    <%= f.label :unit %><br>
+    <%= f.text_area :unit %>
+  </p>
+
+  <p>
+    <%= f.label :district %><br>
+    <%= f.text_area :district %>
+  </p>
+
+  <p>
+    <%= f.label :council %><br>
+    <%= f.text_area :council %>
+  </p>
+
+  <p>
+    <%= f.label :date %><br>
+    <%= f.text_area :date %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+</p>
