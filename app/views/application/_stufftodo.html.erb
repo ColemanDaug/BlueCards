@@ -1,0 +1,108 @@
+<% if user_signed_in? %>
+
+<div class="row">
+  <div class="large-12 columns">
+    <div class="row">
+
+      <div class="large-4 small-6 columns">
+
+        <h4>Stuff To Do</h4><hr>
+
+        <div class="row">
+          <div class="large-1 column">
+            <img src="http://placehold.it/50x50&text=[img]">
+          </div>
+
+          <div class="large-9 columns">
+            <h5><a href="#" class="button">Create Scouts</a></h5>
+            <h6 class="subheader show-for-small">Subheader</h6>
+          </div>
+        </div><hr>
+
+        <div class="hide-for-small">
+          <div class="row">
+            <div class="large-1 column">
+              <img src="http://placehold.it/50x50&text=[img]">
+            </div>
+
+            <div class="large-9 columns">
+              <h5 class="subheader"><a href="#" class="button">Create BlueCards</a></h5>
+            </div>
+          </div><hr>
+
+          <div class="row">
+            <div class="large-1 column">
+              <img src="http://placehold.it/50x50&text=[img]">
+            </div>
+
+            <div class="large-9 columns">
+              <h5 class="subheader"><a href="#" class="button">Print BlueCards</a></h5>
+            </div>
+          </div><hr>
+
+          <div class="row">
+            <div class="large-1 column">
+              <img src="http://placehold.it/50x50&text=[img]">
+            </div>
+
+            <div class="large-9 columns">
+              <h5 class="subheader"><a href="#" class="button">View Orders</a></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <% else %>
+
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="row">
+
+            <div class="large-4 small-6 columns">
+
+              <h4>Stuff To Do</h4><hr>
+
+              <div class="row">
+                <div class="large-1 column">
+                  <img src="http://placehold.it/50x50&text=[img]">
+                </div>
+
+                <div class="large-9 columns">
+                  <h5><a href="#" class="button disabled">Create Scouts</a></h5>
+                  <h6 class="subheader show-for-small">Subheader</h6>
+                </div>
+              </div><hr>
+
+              <div class="hide-for-small">
+                <div class="row">
+                  <div class="large-1 column">
+                    <img src="http://placehold.it/50x50&text=[img]">
+                  </div>
+
+                  <div class="large-9 columns">
+                    <h5 class="subheader"><a href="#" class="button disabled">Create BlueCards</a></h5>
+                  </div>
+                </div><hr>
+
+                <div class="row">
+                  <div class="large-1 column">
+                    <img src="http://placehold.it/50x50&text=[img]">
+                  </div>
+
+                  <div class="large-9 columns">
+                    <h5 class="subheader"><a href="#" class="button disabled">Print BlueCards</a></h5>
+                  </div>
+                </div><hr>
+
+                <div class="row">
+                  <div class="large-1 column">
+                    <img src="http://placehold.it/50x50&text=[img]">
+                  </div>
+
+                  <div class="large-9 columns">
+                    <h5 class="subheader"><a href="#" class="button disabled">View Orders</a></h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+<% end %>
