@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
   get 'scoutentry/index'
 
+  resources :bluecards
+
   root 'application#index'
 
   devise_for :users
@@ -14,6 +16,8 @@ Rails.application.routes.draw do
   get 'index/index'
 
   get 'application/index'
+
+  get 'bluecards/new'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
