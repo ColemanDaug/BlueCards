@@ -2,58 +2,64 @@
 <h1>New Blue Card</h1>
 
 <%= form_for :bluecard, url: bluecards_path do |f| %>
-    <div style="clear:left; width:20%; ">
-      <%= f.label :unit %><%= f.text_area :unit, :value => @currentuser.troopnumber %>
-      <%= f.label :district %><%= f.text_area :district %>
-      <%= f.label :council %><%= f.text_area :council %>
-    </div>
-    <div style="clear:left; ">
-      <%= f.submit %>
-    </div>
+    <div style="margin:1pc;">
+      <div style="clear:left; width:20%; ">
+        <%= f.label :unit %><%= f.text_field :unit, :value => @currentuser.troopnumber %>
+        <%= f.label :district %><%= f.text_field :district %>
+        <%= f.label :council %><%= f.text_field :council %>
+      </div>
+      <div style="clear:left; ">
+        <%= f.submit %>
+      </div>
 
-    <table>
-      <tr>
-        <td>
-          <%= f.label :scout %>
-        </td>
-        <td>
-          Address
-        </td>
-        <td>
-          <%= f.label :city %>
-        <td>
-          <%= f.label :date %>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <%= f.text_field :scout %>
-        </td>
-        <td>
-          <%= f.text_area :street %>
-        </td>
-        <td>
-          <%= f.text_area :city %>
-        </td>
-        <td>
-          <%= f.text_area :date %>
-        </td>
-      </tr>
       <table>
         <tr>
-          <td>Scout</td>
-          <td>Adress</td>
-          <td>City</td>
+          <td>
+            <%= f.label :scout %>
+          </td>
+          <td>
+            Address
+          </td>
+          <td>
+            <%= f.label :city %>
+          <td>
+            <%= f.label :date %>
+          </td>
         </tr>
-        <% @bluecards.each do |bluecard| %>
-            <tr>
-              <td><%= bluecard.scout %></td>
-              <td><%= bluecard.street %></td>
-              <td><%= bluecard.city %></td>
-            </tr>
-        <% end %>
+        <tr>
+          <td>
+            <%= f.text_field :scout %>
+          </td>
+          <td>
+            <%= f.text_field :street %>
+          </td>
+          <td>
+            <%= f.text_field :city %>
+          </td>
+          <td>
+            <%= f.text_field :date %>
+          </td>
+        </tr>
+        <table>
+          <tr>
+            <td><a href="trooptrack.com">Select All</a><br><a href="trooptrack.com">Select None</a></td>
+            <td>Scout</td>
+            <td>Adress</td>
+            <td>City</td>
+            <td></td>
+          </tr>
+          <% @bluecards.each do |bluecard| %>
+              <tr>
+                <td><input type="checkbox" checked="1"</td>
+                <td><%= bluecard.scout %></td>
+                <td><%= bluecard.street %></td>
+                <td><%= bluecard.city %></td>
+                <td><a href="trooptrack.com">Edit</a> <a href="trooptrack.com">Delete</a></td>
+              </tr>
+          <% end %>
+        </table>
       </table>
-    </table>
+    </div>
 <% end %>
 
 </p>
