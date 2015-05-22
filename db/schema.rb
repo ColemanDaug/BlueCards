@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150516193535) do
+ActiveRecord::Schema.define(version: 20150522142358) do
 
   create_table "blue_cards", force: true do |t|
     t.string   "scout"
@@ -68,6 +68,8 @@ ActiveRecord::Schema.define(version: 20150516193535) do
     t.datetime "updated_at"
     t.string   "trooptype"
     t.string   "troopnumber"
+    t.string   "district"
+    t.string   "council"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
