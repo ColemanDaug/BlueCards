@@ -1,0 +1,59 @@
+<p>
+  <h1>New Blue Card</h1>
+
+  <%= form_for :bluecard, url: bluecards_path do |f| %>
+    <div style="clear:left; ">
+      <%= f.submit %>
+    </div>
+
+    <table>
+    <tr>
+      <td>
+    <%= f.label :scout %>
+        </td>
+      <td>
+        <%= f.label :street %>
+      </td>
+      <td>
+        <%= f.label :city %>
+      </td>
+      <td>
+        <%= f.label :unit %>
+      </td>
+      <td>
+        <%= f.label :district %>
+      </td>
+      <td>
+        <%= f.label :council %>
+      </td>
+      <td>
+        <%= f.label :date %>
+      </td>
+    </tr>
+  <tr>
+    <td>
+      <%= f.text_field :scout %>
+    </td>
+    <td>
+      <%= f.text_area :street %>
+    </td>
+    <td>
+      <%= f.text_area :city %>
+    </td>
+    <td>
+      <%= f.text_area :unit %>
+    </td>
+    <td>
+      <%= f.text_area :district %>
+    </td>
+    <td>
+      <%= f.text_area :council %>
+    </td>
+    <td>
+      <%= f.text_area :date %>
+    </td>
+  </tr>
+</table>
+<% end %>
+
+</p>
