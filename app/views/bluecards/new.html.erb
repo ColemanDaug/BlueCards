@@ -5,8 +5,8 @@
     <div style="margin:1pc;">
       <div style="clear:left; width:20%; ">
         <%= f.label :unit %><%= f.text_field :unit, :value => @currentuser.troopnumber %>
-        <%= f.label :district %><%= f.text_field :district %>
-        <%= f.label :council %><%= f.text_field :council %>
+        <%= f.label :district %><%= f.text_field :district, :value => @currentuser.district %>
+        <%= f.label :council %><%= f.text_field :council, :value => @currentuser.council %>
       </div>
       <div style="clear:left; ">
         <%= f.submit %>
