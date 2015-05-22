@@ -1,19 +1,19 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  address: MyString
+  scout: MyString
+  street: MyString
   city: MyString
-  unit: 1
+  unit: MyString
   district: MyString
   council: MyString
-  date: 2015-04-02
+  date: MyString
 
 two:
-  name: MyString
-  address: MyString
+  scout: MyString
+  street: MyString
   city: MyString
-  unit: 1
+  unit: MyString
   district: MyString
   council: MyString
-  date: 2015-04-02
+  date: MyString
