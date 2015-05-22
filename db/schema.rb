@@ -11,19 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150421023903) do
+ActiveRecord::Schema.define(version: 20150516193535) do
 
   create_table "blue_cards", force: true do |t|
-    t.string   "name"
-    t.string   "address"
+    t.string   "scout"
+    t.string   "street"
     t.string   "city"
-    t.integer  "unit"
+    t.string   "unit"
     t.string   "district"
     t.string   "council"
-    t.date     "date"
+    t.string   "date"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "user_id"
   end
+
+  add_index "blue_cards", ["user_id"], name: "index_blue_cards_on_user_id"
 
   create_table "carts", force: true do |t|
     t.datetime "created_at"
